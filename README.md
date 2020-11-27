@@ -2,5 +2,5 @@
 actual information about bitcoin in USD
 
 # install
-cd in bitcoin repository (cd /home/user/Dowloads/bitcoin)
+cd in bitcoin repository (cd /home/user/Dowloads/bitcoin) \n
 sudo docker-compose up
