@@ -1,0 +1,21 @@
+version: "3"
+volumes:
+  web_data:
+    external: true
+services:
+  postgres:
+    image: "postgres:latest"
+    expose:
+      - "5432"
+    environment:
+      POSTGRES_PASSWORD: pw1234
+  worker:
+    build: worker
+    volumes:
+      - web_data:/usr/share/bitcoin
+  app:
+    build: app
+    ports:
+      - "5000:5000"
+    volumes:
+      - web_data:/usr/share/bitcoin

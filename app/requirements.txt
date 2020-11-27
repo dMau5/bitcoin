@@ -1,0 +1,5 @@
+Flask
+flask-restful
+psycopg2-binary
+sqlalchemy
+wheel
